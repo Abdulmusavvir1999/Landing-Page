@@ -1,0 +1,45 @@
+<header class="flex justify-around bg-white p-4">
+    <div class="logo flex">
+        <img class="flex" src="../../assets/img/Icon.svg" alt="">
+        <h1 class="font-bold text-2xl">Nexcent</h1>
+    </div>
+
+    <div>
+        <ul class="desktop flex cursor-pointer">
+            <li routerLink="" fragment="">Home</li>
+            <li (click)="features()">Features</li>
+            <li routerLink="" fragment="">Community</li>
+            <li routerLink="" fragment="">Blog</li>
+            <li routerLink="" fragment="">Pricing</li>
+            <button class="
+            flex border px-6 py-2 border-hidden rounded bg-[#4CAF4F] text-white
+            font-medium">Register Now <img class="w-4 m-auto ml-2" src="../../assets/img/Vector.svg" alt=""></button>
+        </ul>
+
+    </div>
+
+</header>
+<!-- mobile hamburger -->
+<div class="mobile-hamburger">
+    <ul class="hamburger">
+        <li class="cursor-pointer">
+            <label class="cursor-pointer" for="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <input class="hidden" type="checkbox" id="hamburger">
+            <ul class="mobile hidden">
+                <li>Home</li>
+                <li (click)="features()">Features</li>
+                <li (click)="community()">Community</li>
+                <li (click)="blog()">Blog</li>
+                <li (click)="pricing()">Pricing</li>
+                <button class="
+            flex border px-6 py-2 border-hidden rounded bg-[#4CAF4F] text-white
+            font-medium">Register Now <img class="w-4 m-auto ml-2" src="../../assets/img/Vector.svg" alt=""></button>
+            </ul>
+        </li>
+    </ul>
+
+</div>

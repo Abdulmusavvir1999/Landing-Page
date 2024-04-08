@@ -1,0 +1,13 @@
+@media (max-width:500px) {
+    .part-one {
+        h1 {
+            @apply text-3xl;
+        }
+    }
+}
+
+@media (max-width:800px) {
+    .part-one {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,54 @@
+.desktop {
+    li {
+        @apply mx-5 my-1 font-semibold align-middle hover:text-green-500;
+    }
+}
+
+
+// mobile-hamburger
+label {
+    @apply block;
+
+    span {
+        @apply flex w-12 h-1 bg-black m-2 rounded;
+    }
+}
+
+.hamburger {
+    display: none;
+}
+
+
+@media (max-width:800px) {
+    .logo {
+        margin: auto;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile-hamburger {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger ul li {
+        padding-block: 0.5rem;
+        font-weight: 600;
+    }
+
+    .mobile {
+        li:hover {
+            color: green;
+        }
+    }
+
+    input:checked~ul {
+        display: block;
+    }
+}
